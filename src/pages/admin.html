@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuário Administrador</title>
+    <link rel="stylesheet" href="../style/global.css">
+    <link rel="stylesheet" href="../style/admin.css">
+    <link rel="stylesheet" href="../../index.html">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+<body>
+    <nav class="menu_nav">
+        <div class="Titulo">
+            <img src="../assets/Ellipse 1.svg" alt="">
+            <h2 class="Titulo_Home">Kenzie Empresas</h2>
+        </div>
+        <div class="Botoes_nav">
+            <button class="botao_login">Logout</button>
+        </div>
+    </nav>
+
+    <main class="container">
+     <section class="gerenciar">
+        <h2 class="Titulo">Departamentos</h2>
+        <select class="Escolher_empresa" name="" id="">
+            <option company_uuid="" name="" class="geral" value="">Selecionar Empresa</option>
+            
+
+        </select>
+        <button class="criar"><img src="../assets/mais.svg" alt=""> Criar</button>
+     </section>
+
+     <section class="departamentos">
+        <ul class="cards_departamentos">
+         
+        </ul>
+     </section>
+     <dialog class="Modal">
+       <div class="separador">
+        <p class="fecha_modal_olho">X</p>
+        <div class="rendertitulo">
+            <h2 class="Titulo_modal_olho">Nome do departamento</h2>
+        </div>
+            <div class="Separador2">
+                <div class="Descricao_Departamento">
+                    <h4 class="Descricao">Descrição do departamento</h4>
+                    <p class="Empresa_Pertencente">Empresa Pertencente</p>
+                </div>
+                <div class="descricao_contratar">
+                    <select class="Select_modal" name="" id="">
+                        <option value="">Funcionários Sem Departamento</option>
+                    </select>
+                    <button class="Botao_contratar">Contratar</button>
+                </div>
+            </div>
+       </div>
+        <ul class="Lista_Contratados">
+            <li class="contratados">
+                <h4>Username</h4>
+                <p>Pleno</p>
+                <p>Company Name</p>
+                <button>Desligar</button>
+            </li>
+            
+        </ul>
+     </dialog>
+
+     <dialog class="Modal_Criar_DP">
+       <div>
+        <span class="Fecha_Modal_criar">X</span>
+        <h2>Criar Departamento</h2>
+        <input name="name" placeholder="Nome do departamento" type="text">
+        <input name="description" placeholder="Descrição" type="text">
+        <select name="" id="">
+            <option value="">Selecione Empresa</option>
+        </select>
+        <button class="Botao_Submeter">Criar o Departamento</button>
+       </div>
+     </dialog>
+
+     <dialog class="Modal_Editar_DP">
+        <div>
+            <h2>Editar Departamento</h2>
+            <span class="fecha_Editar_DP">X</span>
+            <input name="description" class="Descricao_Modal_Editar_DP" placeholder="Digite a nova descrição" type="" ></input>
+            <button class="Salvar_Alteracoes">Salvar Alterações</button>
+        </div>
+     </dialog>
+
+     <dialog class="Excluir_DP">
+      <div>
+        <span class="fecha_modal_Excluir">X</span>
+        <h2>Realmente deseja Deletar o Departamento e demitir seus Funcionários?</h2>
+        <button class="Confirmar">Confirmar</button>
+      </div>
+     </dialog>
+
+     <section>
+        <h2 class="Titulo_usuarios">Usuários cadastrados</h2>
+        <ul class="Lista_Usuarios">
+       
+          
+        </ul>
+     </section>
+
+     <dialog class="Modal_Editar_Usuario">
+        <div>
+            <span class="Fecha_modal_Editar_usuário">X</span>
+            <h2>Editar Usuário</h2>
+            <input name="kind_of_work" placeholder="Modalidade de trabalho(home office, presencial, híbrido)" type="text">
+            <input name="professional_level" placeholder="Nível profissional(estágio, júnior, pleno, sênior)" type="text">
+
+            <button class="Editar_Usuario">Editar</button>
+        </div>
+
+     </dialog>
+
+     <dialog class="modal_Remover_Usuario">
+        <div>
+            <span class="Fechar_Modal_Remover_Usuario">X</span>
+            <h2>Realmente deseja remover o usuário?</h2>
+            <button class="Deletar_usuario">Deletar</button>
+        </div>
+     </dialog>
+    </main>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+    <script type="module" src="../scripts/Admin.js"></script>
+    
+</body>
+</html>

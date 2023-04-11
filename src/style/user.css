@@ -1,0 +1,142 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 1rem 7%;
+}
+
+.menu_nav{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Titulo{
+    display: flex;
+    align-items: center;
+}
+
+.Titulo > img{
+    margin: 0 1rem 0 0;
+    width: 1rem;
+    height: 1rem;
+}
+
+.Botoes_nav{
+    display: flex;
+    margin: 1rem 0 0 0;
+    gap: 5px;
+}
+
+.botao_login{
+    width: 142px;
+    height: 48px;
+    color: var(--color-brand-1);
+    background-color: var(--color-white);
+    border-color: var(--color-brand-1);
+    font: bold;
+    cursor: pointer;
+}
+
+.Informacoes{
+    margin: 2rem 0;
+    position: relative;
+    padding: 15px;
+    border: 1px solid rgba(0,0,0,0.2);
+}
+.Informacoes > span{
+    margin: 0 4rem 0 0;
+}
+.lapis{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.Username{
+    margin: 0 0 1rem 0;
+}
+
+.container{
+    position: relative;
+}
+
+.Modal{
+    position: relative;
+    width: 500px;
+    height: 435px;
+    padding: 2rem;
+    margin: auto auto;
+    border: none;
+}
+.fecha_Modal{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.generico{
+    width: 100%;
+    height: 52px;
+    margin: 1rem 0 1rem 0;
+    padding: 0 0 0 1rem;
+}
+
+.Editar{
+    background-color: var(--color-brand-1);
+    color: var(--color-white);
+    border-color: var(--color-brand-1);
+}
+
+.sem_trabalho{
+    border: 1px solid;
+    height: 470px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sem_trabalho > h2 {
+    font-weight: 700;
+    font-family: "inter",sans-serif;
+}
+.com_trabalho{
+    display: flex;
+    flex-direction: column;
+}
+
+.com_trabalho > button{
+    background-color: var(--color-brand-1);
+    color: var(--color-white);
+    height: 78px;
+    width: 100%;
+    font-weight: 700;
+    font-size: 2rem;
+    border: none;
+}
+.Lista_cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2rem 0 0 0;
+}
+.card{
+    list-style: none;
+    width: 318px;
+    height: 76px;
+    border: solid 1px var(--color-brand-1);
+    margin: 0.5rem 2rem;
+    
+}
+
+.Título_card{
+    padding: 10px 10px;
+    font-weight: bold;
+}
+.Nivel_Profissional{
+    padding: 10px;
+    margin: 5px 0 0 0;
+}
+.esconde{
+    display: none;
+}

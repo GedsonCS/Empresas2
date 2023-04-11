@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User</title>
+    <link rel="stylesheet" href="../style/global.css">
+    <link rel="stylesheet" href="../style/user.css">
+</head>
+<body>
+    <nav class="menu_nav">
+        <div class="Titulo">
+            <img src="../assets/Ellipse 1.svg" alt="">
+            <h2 class="Titulo_Home">Kenzie Empresas</h2>
+        </div>
+        <div class="Botoes_nav">
+            <button class="botao_login">Logout</button>
+        </div>
+    </nav>
+
+    <main class="container">
+       <section class="Informacoes">
+       
+       </section>
+
+       <dialog class="Modal">
+        <p class="fecha_Modal">X</p>
+        <h2 class="Titulo_formulario">Editar Perfil</h2>
+        <input name="username" class="generico" placeholder="Seu Nome" type="text">
+        <input name="email" class="generico" type="email" placeholder="Seu e-mail">
+        <input name="password" class="generico" type="password" placeholder="Sua Senha">
+        <button class="Editar generico">Editar perfil</button>
+                
+       </dialog>
+
+       <section class="sem_trabalho esconde">
+        <h2>Você ainda não foi contratado</h2>
+       </section>
+
+       <section class="com_trabalho esconde">
+        <ul class="Lista_cards">
+          
+            
+        </ul>
+       </section>
+    </main>
+    <script type="module" src="../scripts/user.js"></script>
+</body>
+</html>
